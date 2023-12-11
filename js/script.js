@@ -7,7 +7,6 @@ document.querySelector('input[type="button"').addEventListener('click',()=>{
 
     let url = `https://restcountries.com/v3.1/name/${pais}`
     fetch(url).then(res => res.json()).then(obj => {
-        var arrayInfos = []
         if(obj.length > 0){
             var bande = document.querySelector('div.bandeira')
             bande.innerHTML = ''
